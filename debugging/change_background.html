@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Change Background Color</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding-top: 50px;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+padding-top: 50px;
+}
+button {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -25,17 +25,17 @@
 <button id="colorButton">Change Color</button>
 
 <script>
-    // Corrected the ID to 'colorButton' to match the HTML button
-    document.getElementById("colorButton").addEventListener("click", function() {
-        changeBackgroundColor();
-    });
+// Corrected the ID to 'colorButton' to match the HTML button
+document.getElementById("colorButton").addEventListener("click", function() {
+changeBackgroundColor();
+});
 
-    function changeBackgroundColor() {
-        // Generate a random color
-        var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-        // Change the background color of the body
-        document.body.style.backgroundColor = randomColor;
-    }
+function changeBackgroundColor() {
+// Generate a random color
+var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+// Change the background color of the body
+document.body.style.backgroundColor = randomColor;
+}
 </script>
 
 </body>
